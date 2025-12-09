@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Vids 社内向け紹介資料</title>
+    <style>
+        :root {
+            --primary-color: #4285F4;
+            --secondary-color: #EA4335;
+            --bg-color: #F8F9FA;
+            --text-color: #202124;
+            --card-bg: #FFFFFF;
+        }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px;
+            background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+            color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #f1f3f4;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #f1f3f4;
+            font-weight: bold;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        .highlight {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .limitation-box {
+            background-color: #fff8e1;
+            border: 1px solid #ffecb3;
+            padding: 20px;
+            border-radius: 8px;
+            color: #b06200;
+        }
+        .tag {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #1967d2;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Google Vids とは？</h1>
+        <div class="subtitle">仕事のための動画作成ツール。<br>スライドを作る感覚で、誰でも動画が作れます。</div>
+    </header>
+
+    <section>
+        <h2>🎬 概要：なぜ今 Google Vids なのか</h2>
+        <p>Google Vidsは、<strong>「動画編集の民主化」</strong>を目指したツールです。高度な技術やハイスペックなPCは不要。Google Workspaceの一部として提供されているため、ドキュメントやスライドと同じように、ブラウザだけで安全に利用できます。</p>
+        <p>こんな場面に最適です：</p>
+        <ul>
+            <li>チームへの進捗報告・トレーニング動画</li>
+            <li>経営層からのメッセージ発信</li>
+            <li>顧客向けヘルプセンター動画</li>
+            <li>プロジェクトの振り返り</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>✨ 3つの大きな特徴</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🤖 AIが下書きを作成</h3>
+                <p>「Gemini」が搭載されています。プロンプト（指示）を入力し、関連するGoogleドライブのファイルを指定するだけで、<strong>構成案・スクリプト・画像選定</strong>までを自動で生成してくれます。</p>
+            </div>
+            <div class="feature-card">
+                <h3>🤝 リアルタイム共同編集</h3>
+                <p>ここが最大の特徴です。Google ドキュメントと同じように、<strong>複数人で同時にアクセスして編集</strong>したり、コメントを残したりできます。ファイルを送受信する必要はありません。</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎙️ 収録・素材もワンストップ</h3>
+                <p>自分のPC画面やカメラ映像をそのまま録画して挿入可能。また、数百万点のロイヤリティフリーの動画・画像・BGM素材が使い放題です。</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚖️ 従来の編集ツール（Adobe等）との違い</h2>
+        <p>「YouTuberのような凝った編集」ではなく、「ビジネスコミュニケーション」に特化しています。</p>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th style="width: 20%">項目</th>
+                    <th style="width: 40%; color: #4285F4;">Google Vids</th>
+                    <th style="width: 40%">従来の編集ソフト (Adobe Premiere等)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>目的</strong></td>
+                    <td><span class="highlight">「伝わる」こと（社内・業務）</span><br>効率・共有スピード重視</td>
+                    <td>「魅せる」こと（広告・作品）<br>クオリティ・芸術性重視</td>
+                </tr>
+                <tr>
+                    <td><strong>操作感</strong></td>
+                    <td>PowerPoint/スライドに近い<br>ドラッグ＆ドロップ中心</td>
+                    <td>タイムライン編集<br>専門知識と学習が必要</td>
+                </tr>
+                <tr>
+                    <td><strong>共同作業</strong></td>
+                    <td><span class="highlight">リアルタイム共同編集が可能</span><br>URL共有だけでOK</td>
+                    <td>基本的に個人作業<br>ファイルの受け渡しが必要</td>
+                </tr>
+                <tr>
+                    <td><strong>PC環境</strong></td>
+                    <td>ブラウザで動作（軽量）</td>
+                    <td>ハイスペックPCが必要</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>⚠️ 知っておくべき制約（仕様）</h2>
+        <div class="limitation-box">
+            <h3>📌 導入前にご確認ください</h3>
+            <ul>
+                <li><strong>動画の長さは「最大10分」まで：</strong><br>長時間のセミナー動画作成などには向きません。要点をまとめたショート動画向けです。</li>
+                <li><strong>高度なエフェクトは不可：</strong><br>複雑なアニメーション、カラーグレーディング（色調補正）、ピクセル単位の調整はできません。</li>
+                <li><strong>書き出し形式：</strong><br>基本はMP4です。プロジェクト自体はGoogleドライブに保存されます。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🚀 さあ、はじめましょう</h2>
+        <p>Google Workspaceを利用中の私たちは、今すぐVidsを利用可能です。<br>
+        まずは、Google ドライブの「新規作成」ボタンから <strong>[Google Vids]</strong> を選んでみてください。</p>
+        <p><strong>Next Step:</strong> 来週の定例報告を、スライドの代わりに3分のVids動画で作ってみませんか？</p>
+    </section>
+</div>
+
+</body>
+</html>
